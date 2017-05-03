@@ -5,7 +5,7 @@ from setuptools import setup
 import hippiehug
 
 setup(name='hippiehug',
-      version=hippiehug.VERSION,
+      version=1.0,
       description='A Merkle Tree implementation with a flexible storage backend.',
       author='George Danezis',
       author_email='g.danezis@ucl.ac.uk',
