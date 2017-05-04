@@ -11,21 +11,21 @@ class BaseBlock(object):
 
     Example::
 
-        class JsonBlock(BaseBlock):
-            def serialize(self):
-                return json.dumps(
-                # ...
-                # Things to be serialized
-                # ...
-                ).encode('utf-8')
+	class JsonBlock(BaseBlock):
+	    def serialize(self):
+		return json.dumps(
+		# ...
+		# Things to be serialized
+		# ...
+		).encode('utf-8')
 
-            @staticmethod
-            def deserialize(self, serialized):
-                vals = json.loads(serialized)
-                # ...
-                # Do deserialization
-                # ...
-                return JsonBlock(**vals)
+	    @staticmethod
+	    def deserialize(serialized):
+		vals = json.loads(serialized)
+		# ...
+		# Do deserialization
+		# ...
+		return JsonBlock(**vals)
 
     .. seealso ..
     TODO: Serializable block classes
